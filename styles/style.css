@@ -637,11 +637,10 @@ a {
 }
 
 .skill-progress {
-    height: 100%;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    border-radius: 4px;
+   height: 100%;
     width: 0;
-    transition: width 1.5s ease;
+    background-color: #4caf50;
+    transition: width 1s ease-in-out;
 }
 
 /* Experience Section */
