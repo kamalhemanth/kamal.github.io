@@ -58,11 +58,7 @@
                 <h4 class="greeting">Hi, I'm</h4>
                 <h1 class="name">Kamal Hemanth Reddy Chimakurthi</h1>
                 <h2 class="title">Software Developer</h2>
-                <p class="summary">I am a dynamic and results-driven Software Developer with over 4 years of experience in designing and developing scalable, cloud-based solutions. My expertise spans Java, Python, React.js, and Node.js, with a strong focus on building robust microservices architectures, RESTful APIs, and leveraging cloud platforms like AWS. I have successfully developed and deployed e-commerce platforms, SaaS applications, and backend systems, optimizing for performance, security, and user experience.
-
-                    In addition to my development skills, I am well-versed in Agile methodologies, CI/CD pipelines, automated testing, and cloud infrastructure management. I thrive in fast-paced environments and am passionate about delivering high-quality software solutions that drive business success. Whether it’s building secure authentication systems, optimizing databases, or implementing scalable architectures, I am always focused on delivering value through technology.
-                    
-                    Feel free to explore my projects and experience as I continue to push the boundaries of software development.</p>
+                <p class="summary">I am a dynamic and results-driven Software Developer with over 4 years of experience in designing and developing scalable, cloud-based solutions. My expertise spans Java, Python, React.js, and Node.js, with a strong focus on building robust microservices architectures, RESTful APIs, and leveraging cloud platforms like AWS. I have successfully developed and deployed e-commerce platforms, SaaS applications, and backend systems, optimizing for performance, security, and user experience.In addition to my development skills, I am well-versed in Agile methodologies, CI/CD pipelines, automated testing, and cloud infrastructure management. I thrive in fast-paced environments and am passionate about delivering high-quality software solutions that drive business success. Whether it’s building secure authentication systems, optimizing databases, or implementing scalable architectures, I am always focused on delivering value through technology.Feel free to explore my projects and experience as I continue to push the boundaries of software development.</p>
                 <div class="hero-btns">
                     <a href="#contact" class="btn primary">Get In Touch</a>
                     <a href="#about" class="btn secondary">Learn More</a>
@@ -381,5 +377,17 @@
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <script src="scripts/script.js"></script>
+        <script>
+        // Wait until the entire page loads
+        window.addEventListener('load', () => {
+          const skillBars = document.querySelectorAll('.skill-item');
+      
+          skillBars.forEach(skill => {
+            const percent = skill.getAttribute('data-percent');
+            const progress = skill.querySelector('.skill-progress');
+            progress.style.width = percent + '%';
+          });
+        });
+      </script>
 </body>
 </html>
